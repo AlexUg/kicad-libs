@@ -1,0 +1,5 @@
+**/*.bak
+**/*_bak
+**/*-bak
+3dmodels/**/*.obj
+
