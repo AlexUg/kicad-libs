@@ -1,4 +1,4 @@
-(module TinyRTC_DS1307_f (layer F.Cu) (tedit 5E022F2F)
+(module TinyRTC_DS1307_f (layer F.Cu) (tedit 5E122331)
   (fp_text reference REF** (at 2.54 0 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -39,7 +39,7 @@
   (pad DS2 thru_hole circle (at 12.7 -3.81) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at 11.43 12.8) (size 3 3) (drill 3) (layers *.Cu *.Mask))
   (pad "" np_thru_hole circle (at -10.16 12.8) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-  (model ${KIUSR3DMOD}/RTC_Modules.3dshape/TinyRTC_1307_f_socket.wrl
+  (model ${KIUSR3DMOD}/RTC_Modules.3dshapes/TinyRTC_1307_f_socket.wrl
     (offset (xyz 14 -15.5 9.5))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 180 0))
