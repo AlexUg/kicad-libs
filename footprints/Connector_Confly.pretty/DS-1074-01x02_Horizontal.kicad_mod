@@ -1,4 +1,4 @@
-(module DS-1074-01x02_Horizontal (layer F.Cu) (tedit 5E99F617)
+(module DS-1074-01x02_Horizontal (layer F.Cu) (tedit 5E9C42F0)
   (fp_text reference REF** (at 0 3.175) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -15,11 +15,10 @@
   (fp_line (start -5.15 -17.55) (end 5.15 -17.55) (layer F.Fab) (width 0.12))
   (fp_line (start 5.15 -17.55) (end 5.15 -3.45) (layer F.Fab) (width 0.12))
   (fp_line (start 5.15 -3.45) (end -5.15 -3.45) (layer F.Fab) (width 0.12))
-  (fp_line (start -4.65 -1.6) (end -5.5 -1.6) (layer F.CrtYd) (width 0.12))
+  (fp_line (start 5.5 -1.6) (end -5.5 -1.6) (layer F.CrtYd) (width 0.12))
   (fp_line (start -5.5 -1.6) (end -5.5 -17.9) (layer F.CrtYd) (width 0.12))
   (fp_line (start -5.5 -17.9) (end 5.5 -17.9) (layer F.CrtYd) (width 0.12))
   (fp_line (start 5.5 -17.9) (end 5.5 -1.6) (layer F.CrtYd) (width 0.12))
-  (fp_line (start 5.5 -1.6) (end 3.65 -1.6) (layer F.CrtYd) (width 0.12))
   (pad 2 thru_hole circle (at 2.54 0) (size 3.2 3.2) (drill 1.8) (layers *.Cu *.Mask))
   (pad 1 thru_hole rect (at -2.54 0) (size 3.2 3.2) (drill 1.8) (layers *.Cu *.Mask))
   (model ${KIUSR3DMOD}/Connector_Confly.3dshapes/DS_1074_01x02_Horizontal.wrl
