@@ -41,7 +41,7 @@ U 1 1 605A139B
 P 1200 1700
 F 0 "J1" H 1118 2117 50  0000 C CNN
 F 1 "Conn_01x06" H 1118 2026 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 1200 1700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1200 1700 50  0001 C CNN
 F 3 "~" H 1200 1700 50  0001 C CNN
 	1    1200 1700
 	-1   0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 605A289D
 P 10050 2500
 F 0 "J2" H 10130 2492 50  0000 L CNN
 F 1 "Conn_01x04" H 10130 2401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 10050 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10050 2500 50  0001 C CNN
 F 3 "~" H 10050 2500 50  0001 C CNN
 	1    10050 2500
 	1    0    0    -1  
@@ -80,10 +80,10 @@ F 3 "~" H 7000 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP1
+L Device:Jumper_NO_Small A0
 U 1 1 605A711D
 P 8250 4950
-F 0 "JP1" H 8250 5135 50  0000 C CNN
+F 0 "A0" H 8250 5135 50  0000 C CNN
 F 1 "A0" H 8250 5044 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8250 4950 50  0001 C CNN
 F 3 "~" H 8250 4950 50  0001 C CNN
@@ -91,10 +91,10 @@ F 3 "~" H 8250 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP2
+L Device:Jumper_NO_Small A1
 U 1 1 605A8056
 P 8250 5250
-F 0 "JP2" H 8250 5435 50  0000 C CNN
+F 0 "A1" H 8250 5435 50  0000 C CNN
 F 1 "A1" H 8250 5344 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8250 5250 50  0001 C CNN
 F 3 "~" H 8250 5250 50  0001 C CNN
@@ -102,10 +102,10 @@ F 3 "~" H 8250 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP3
+L Device:Jumper_NO_Small A2
 U 1 1 605A8317
 P 8250 5550
-F 0 "JP3" H 8250 5735 50  0000 C CNN
+F 0 "A2" H 8250 5735 50  0000 C CNN
 F 1 "A2" H 8250 5644 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8250 5550 50  0001 C CNN
 F 3 "~" H 8250 5550 50  0001 C CNN
@@ -155,7 +155,7 @@ U 1 1 605ABF21
 P 4150 1350
 F 0 "BT1" H 4268 1446 50  0000 L CNN
 F 1 "Battery_Cell" H 4268 1355 50  0000 L CNN
-F 2 "" V 4150 1410 50  0001 C CNN
+F 2 "BatteryU:CH224-2032LF" V 4150 1410 50  0001 C CNN
 F 3 "~" V 4150 1410 50  0001 C CNN
 	1    4150 1350
 	1    0    0    -1  
@@ -320,7 +320,7 @@ F 1 "R" H 5570 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5430 1150 50  0001 C CNN
 F 3 "~" H 5500 1150 50  0001 C CNN
 	1    5500 1150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D2
@@ -572,9 +572,9 @@ Wire Wire Line
 	2500 3250 2150 3250
 Wire Wire Line
 	2500 3150 2150 3150
-Text GLabel 6050 3750 0    50   Input ~ 0
-SDA
 Text GLabel 6050 3650 0    50   Input ~ 0
+SDA
+Text GLabel 6050 3750 0    50   Input ~ 0
 SCL
 Wire Wire Line
 	6400 3750 6050 3750
@@ -682,4 +682,37 @@ F 3 "~" H 4150 850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 850  4150 950 
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 606218C4
+P 750 6950
+F 0 "H1" H 850 6996 50  0000 L CNN
+F 1 "M2" H 850 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 750 6950 50  0001 C CNN
+F 3 "~" H 750 6950 50  0001 C CNN
+	1    750  6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60621F2A
+P 750 7150
+F 0 "H2" H 850 7196 50  0000 L CNN
+F 1 "M2" H 850 7105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 750 7150 50  0001 C CNN
+F 3 "~" H 750 7150 50  0001 C CNN
+	1    750  7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60622452
+P 750 7350
+F 0 "H3" H 850 7396 50  0000 L CNN
+F 1 "M2" H 850 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 750 7350 50  0001 C CNN
+F 3 "~" H 750 7350 50  0001 C CNN
+	1    750  7350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
