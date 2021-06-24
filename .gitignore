@@ -3,4 +3,5 @@
 **/*-bak
 3dmodels/**/*.obj
 **/*.FCStd1
-
+**/*-cache.lib
+**/*-cache
